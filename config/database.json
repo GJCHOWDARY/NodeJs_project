@@ -1,0 +1,23 @@
+{
+	"development":{
+		"host": "localhost",
+    "port": 3306,
+    "database": "shopaye",
+    "username": "shopaye_user",
+    "password": "helloworld"
+	},
+	"testing":{
+		"host": "shopayetesting.cnllobdiywch.ap-south-1.rds.amazonaws.com",
+        "port": 3306,
+        "database": "shopaye_testing",
+        "username": "shopaye_user",
+        "password": "ShopayeTesting2016"
+	},
+	"production":{
+		"host": "35.154.187.81",
+        "port": 3306,
+        "database": "shopaye_production",
+        "username": "root",
+        "password": "p@ssw0rd"
+	}
+}
