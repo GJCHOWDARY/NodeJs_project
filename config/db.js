@@ -2,6 +2,9 @@ var fs = require('fs');
 var database =require('./database');
 var mysql = require('mysql'),
 async = require('async');
+var migration = require('mysql-migration');
+var path = require('path');
+
 
 var environment_db_config = function() {
     var environment = process.env.NODE_ENV;
@@ -23,6 +26,7 @@ exports.connect = function(done){
   console.log("good");
 	done()
 }
+migration.init(connect, __dirname + '/migrations/migration.js');
 
 exports.get = function() {
   return state.pool

@@ -4,6 +4,8 @@ var app = express();
 var path = require('path');
 var http = require('http');
 var db = require(path.resolve('config')).dbConfig;
+var migration = require(path.resolve('migration')).dbConfig;
+
 var controllers = require(path.resolve('api')).controllers,
 dealsController = controllers.dealsController,
 searchController = controllers.searchController;
