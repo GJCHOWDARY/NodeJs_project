@@ -12,7 +12,6 @@ searchController = controllers.searchController;
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 /* route to handle login and registration */
-
   //Making DB Connection
 db.connect(function(err) {
   if (err) {
