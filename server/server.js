@@ -29,7 +29,6 @@ db.connect(function(err) {
     app.get('/api/deals/near_me', dealsController.getDealsNearMe);
     app.get('/api/getUser', dealsController.getUser);
 
-
     // app.get("/api/getFeaturedDeal",function(req,res){
     //   console.log("success");
     //   var sqlQuery = "SELECT spt.id,spt.deal_desc,spt.deal_price,spt.product_actual_price,spt.product_deal_desc,spt.cover,"+
